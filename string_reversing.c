@@ -7,7 +7,8 @@ int main() {
    // comment for git
    
     printf("print char %c \n", text[0]);
-
+    
+    printf("Hello world from C!");
 
     return 0;
 } 
