@@ -2,12 +2,10 @@
 
 int main() {
     
-   char text[6] = {'H','e','l','l','o','\0'}; 
-    
-    int length = 5;
+    char text[6] = {'H', 'e', 'l', 'l', 'o', '\0'}; // Important: Null terminator!
 
+   // comment for git
    
-    // iteration error full length will undo the reverse
 
     for (int i = 0; i < 5; i++)
 
@@ -16,11 +14,14 @@ int main() {
             
             temp = text[i];
             
+            //replace left item with right item 
 
-            text[i] = text[(length - (i + 1))];
+            text[i] = text[(sizeof(text) - (i + 1))];
 
 
-            text[(length - (i + 1))] = temp;
+            // replace right item with the temp char value
+
+            text[(sizeof(text) - 1)] = temp;
 
             printf("first swap : %c and last swap : %c \n", text[i], text[(sizeof(text) - (i + 1))]);
             
