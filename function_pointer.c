@@ -24,7 +24,7 @@ int main() {
 }
 
 /*
-
+ *
   1. Function Pointers:
      - Function names represent memory addresses of their first instructions.
      - Function pointers allow passing functions as arguments.
